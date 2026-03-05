@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href=assets/logo.png>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>BolaTV</title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Aguarde, carregando informações...</p>
+    </div>
+   
+    <header class="header">
+        <div class="container header-conteudo">
+            <h1 class="logo">
+                <a href="index.html">BolaTV</a>
+            </h1>
+
+            <nav class="menu">
+
+                <a href="#" id="inicio">Início</a>
+                <a href="#" id="filmes">Filmes</a>
+                <a href="#" id="series">Séries</a>
+                <button id="botaoTema">Tema</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pesquisa-section">
+            <div class="container pesquisa-conteudo">
+
+                <select id="filtroGenero"></select>
+
+                <input type="text" placeholder="Pesquisar por filme" id="campoPesquisa">
+
+                <button class="pesquisa-button" id="botaoPesquisa">
+                    <img src="assets/Lupa.svg">
+                </button>
+            </div>
+        </section>
+       
+        <section class="exibeFilme-section">
+            <div class="filmesGrid" id="filmesGrid"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 BolaTV. Todos os direitos reservados à Isaque Coelho, Vitor Manoel e Pablo Ramirez.</p>
+    </footer>
+</body>
+</html>
